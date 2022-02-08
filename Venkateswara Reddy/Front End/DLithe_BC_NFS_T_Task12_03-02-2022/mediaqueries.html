@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            this is media screen
+        </title>
+    </head><style>
+ body{
+    background-color: rgb(197, 10, 41);
+    color: rgb(114, 241, 199);
+  }
+  
+  /* On screens that are 992px wide or less, the background color is blue */
+  @media screen and (max-width: 1000px) {
+    body {
+      background-color: rgb(93, 240, 35);
+      color: rgb(236, 105, 105);
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 200px) {
+    body {
+      background-color: green;
+      color:aqua;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    p{
+      background-color: purple;
+      color:white;
+    }
+  }
+  </style>
+
+  <body>
+      <pre>
+        <p>1.The Media Type (example: screen) allows us to declare what type of of media the rules should be applied to. 
+        There are four options you can declare: all, print, screen, and speech.</p>
+
+        <p>2.Expressions (example: (min-width: 800px) allow you to further target devices based on specific conditions you pass to the media query.
+         Expressions test media features, which describe different features of a device, such as width and height.</p>
+        
+      </pre>
+
+  </body>
+  </html>

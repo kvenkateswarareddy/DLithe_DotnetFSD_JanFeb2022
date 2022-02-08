@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    background: #22c1c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #22c1c3, #fdbb2d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #22c1c3, #fdbb2d);
+}
+p::first-line {
+  color: rgb(67, 209, 245);
+  font-variant: small-caps;
+}
+h1::before{
+content: url(emoji2.jpg);
+}
+h1::after{
+content: url(emoji1.jpg);
+}
+i{
+    color: rgb(243, 158, 243);
+}
+p::first-letter {
+  color: rgb(243, 247, 6);
+  font-size: xx-large;
+} 
+::marker { 
+  color: rgb(243, 128, 147);
+  font-size: 20px;
+}
+::selection {
+  color: white;
+  background: rgb(21, 221, 71);
+}
+</style>
+</head>
+<body>
+<h1>Pseudo-Elements</h1>
+
+<p>You can use the <i>::first-line pseudo-element</i> to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<pre>
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+</pre
+</body>
+</html>

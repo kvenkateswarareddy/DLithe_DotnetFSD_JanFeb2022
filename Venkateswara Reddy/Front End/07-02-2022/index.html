@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: rgb(245, 147, 147); background-color: #b3ccf1;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #cbf798;}
+  #section3 {padding-top:50px;height:500px;color: rgb(209, 242, 245); background-color: #8dee91;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #767a7a;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #787c7c;}
+  nav{
+      background-color: antiquewhite;
+  }
+  button{
+      size: 20%;
+  }
+  #pop{
+      text-align: center;
+      padding-right: 20px;
+  }
+  </style>
+</head>
+<!--scrollspy-->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top "> <!--Try with <ul class="nav nav-pills nav-stacked">-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+
+        
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Popover</a></li>
+          <li><a href="#section2">Tooltip</a></li>
+          <li><a href="#section3">pills</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip(); 
+      $(document).ready(function(){  
+        $('[data-toggle="popover"]').popover();     
+    });    
+    });
+    </script>
+<div id="section1" class="container-fluid">
+  <h1>Section 1</h1>
+    <hr>
+    <br>
+    <div class="container">  
+      <h3>Popover Example</h3>  
+        <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>  
+    </div> 
+    <br><br>
+    <div class="pop">
+  <ul class="list-inline">  
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top</a></li><br><br>  
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a></li><br><br><br>  
+    <center><li><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a></li></center>  
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a></li>  
+  </ul> 
+</div>
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Section 2</h1>
+  <center>
+  <button><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></button><br><br>
+  <a href="#" data-toggle="tooltip" data-placement="Right" title="Hooray!"><button>Right</button></a><br><br>
+  <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!"><button>left</button></a><br><br>
+  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!"><button>bottom</button></a>
+  <center></center> 
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Section 3</h1>
+
+  <div class="container">  
+    <h2>Dynamic Pills</h2>  
+    <ul class="nav nav-pills">  
+      <li class="active"><a data-toggle="pill" href="#home1">Html</a></li>  
+      <li><a data-toggle="pill" href="#menu11">Java</a></li>  
+      <li><a data-toggle="pill" href="#menu12">Sql</a></li>  
+      <li><a data-toggle="pill" href="#menu13">C</a></li>  
+    </ul>
+
+
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<p>Add data-spy="scroll" to the element that should be used as the scrollable area (often this is the body element).
+
+    Then add the data-target attribute with a value of the id or the class name of the navigation bar (.navbar). This is to make sure that the navbar is connected with the scrollable area.
+    
+    Note that scrollable elements must match the ID of the links inside the navbar's list items (div id="section1" matches a href="#section1").
+    
+    The optional data-offset attribute specifies the number of pixels to offset from top when calculating the position of scroll.
+    
+    This is useful when you feel that the links inside the navbar changes the active state too soon or too early when jumping to the scrollable elements. Default is 10 pixels.
+    
+    Requires relative positioning: The element with data-spy="scroll" requires the CSS position property, with a value of "relative" to work properly.</p>
+
+    <hr>
+    <br>
+   
+      
+</body>
+</html>
