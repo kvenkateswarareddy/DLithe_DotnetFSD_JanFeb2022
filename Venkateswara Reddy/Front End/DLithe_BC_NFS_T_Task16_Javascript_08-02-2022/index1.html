@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+          /* for button pressed*/
+    function hi() 
+            {
+        alert('Hi wecome to Mouse events!');
+      } 
+//focus element 
+function highlightInput()
+{
+    var e = document.getElementById('focus');
+            e.style.backgroundColor = '#F0B27A';
+}
+function changeBackground()
+
+{
+//var x = document.getElementById('bg');
+bg.style.backgroundColor = 'rgb('+a+', '+b+', '+c+')';
+//bg.style.backgroundColor='rgb(255,0,78)';
+} 
+//hover of mouse
+function hov() {
+var e = document.getElementById('hover');
+//e.style.display = 'none';
+e.style.height='40%';
+e.style.width='80%'
+hover.style.backgroundColor='pink';
+
+}
+
+
+function myFunctionimg() {
+  document.getElementById("myDiv").style.backgroundImage = "url('img.jpg')";
+}
+function myFunction() 
+{
+  document.getElementById("demo2").innerHTML = "welcome to javascript ";
+}
+//alert box wit multiply number
+function getcube(number)
+{  
+alert(number*number*number);  
+}
+        </script>
+        <style>
+            body{
+                background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            }
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+            button{
+                font-size: xx-large;
+                background-color: #bff7c0;
+            }
+            div{
+              width: 40%;
+              height: 50%;
+            }
+
+            
+        </style>
+</head>  
+<body>
+
+<button onclick="hi()" >Welcome</button> <br><br>
+<!-- to know the current time-->
+<button onclick="this.innerHTML = Date()">The time is?</button><br><br>
+
+<h3> the mouse presed on the text box the color changes</h3>
+<input id="focus" type="text" onfocus="highlightInput()" placeholder="Enter the Name">
+<h3>the background color change when we enter a character</h3>
+<input id="bg" type="text" onkeyup="changeBackground()"
+placeholder="Enter Email" style="color:rgb(32, 209, 150)">
+<h3>when  a key is pressed it shows alert msg</h3>
+<input type="text" onkeypress="alert('You have pressed a key inside text box!')" placeholder="Enter Text">
+
+<div>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+<button type="button" onclick="getcube(8)">cube</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+</div>
+
+<div id="myDiv">This is a div element.</div>
+<br>
+<!--button for the img-->
+<button type="button" onclick="myFunctionimg()">Image to show</button>
+
+<div id="hover" onmouseover="hov()"
+style="background-color:rgb(115, 173, 169);height:20%;width:20%;">
+<br>
+</div>
+
+
+
+</body>
+</html>

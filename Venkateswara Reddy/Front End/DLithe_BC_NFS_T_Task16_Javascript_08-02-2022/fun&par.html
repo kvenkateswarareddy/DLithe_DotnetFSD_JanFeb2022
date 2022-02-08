@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Events</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h1> Parameters</h1>
+        <hr>
+        <h2>multiplication of a number</h2>
+            Number first number : <input type="number" name="a" id="a" class="form-control"><br>
+            <button type="button" class="btn btn-success" onclick="mul()">multiplication</button>
+        <script>
+            function mul() {
+                var a = document.getElementById('a').value;
+
+                var sum = parseInt(a) * parseInt(a);
+                alert(sum);
+            }
+        </script>
+    </div>
+</body>
+</html>

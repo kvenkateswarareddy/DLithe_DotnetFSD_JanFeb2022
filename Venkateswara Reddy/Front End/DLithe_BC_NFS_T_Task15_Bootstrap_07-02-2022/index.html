@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap popover,scrollpill,progressbars</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,11 +11,11 @@
   body {
     position: relative; 
   }
-  #section1 {padding-top:50px;height:500px;color: rgb(245, 147, 147); background-color: #b3ccf1;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #cbf798;}
-  #section3 {padding-top:50px;height:500px;color: rgb(209, 242, 245); background-color: #8dee91;}
-  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #767a7a;}
-  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #787c7c;}
+  /* height,width and background color forsections*/ 
+  #section1 {padding-top:50px;height:500px;color: rgb(66, 63, 63); background-color: rgb(247, 154, 154);}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #81af4c;}
+  #section3 {padding-top:50px;height:500px;color: rgb(8, 8, 8); background-color: #24bad4;}
+  #section4 {padding-top:50px;height:500px;color: #fff; background-color: #afb0fc;}
   nav{
       background-color: antiquewhite;
   }
@@ -27,6 +27,10 @@
       padding-right: 20px;
   }
   </style>
+  <!--alert msg for the  page-->
+  <script>
+    alert("welcome venkatesh this is popover,model,tooltip,tabspill,progressbar and scrollspy");
+  </script>
 </head>
 <!--scrollspy-->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -41,7 +45,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">PMTTS</a>
     </div>
     <div>
 
@@ -51,16 +55,17 @@
           <li><a href="#section1">Popover</a></li>
           <li><a href="#section2">Tooltip</a></li>
           <li><a href="#section3">pills</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-          </li>
+          <li><a href="#section4">progressbar</a></li>
         </ul>
       </div>
     </div>
   </div>
 </nav>    
 <script>
+  /* tooltip function in js */
     $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip(); 
+      /* popover function in js */
       $(document).ready(function(){  
         $('[data-toggle="popover"]').popover();     
     });    
@@ -68,8 +73,36 @@
     </script>
 <div id="section1" class="container-fluid">
   <h1>Section 1</h1>
+  <div class="container">  
+    <h2>Modal Example</h2>  
+    <!-- Trigger the modal with a button -->  
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>  
+    
+    <!-- Modal -->  
+    <div class="modal fade" id="myModal" role="dialog">  
+      <div class="modal-dialog"> <!--<div class="modal-dialog modal-lg"> or sm-->  
+        
+        <!-- Modal content-->  
+        <div class="modal-content">  
+          <div class="modal-header">  
+            <button type="button" class="close" data-dismiss="modal">×</button>  
+            <h4 class="modal-title">Model Alert box</h4>  
+          </div>  
+          <div class="modal-body">  
+            <p>WELCOME TO THE MODEL ALERT BOX</p>  
+          </div>  
+          <div class="modal-footer">  
+            <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>  
+          </div>  
+        </div>  
+          
+      </div>  
+    </div>  
+      
+  </div> 
     <hr>
     <br>
+    <!-- popover example-->
     <div class="container">  
       <h3>Popover Example</h3>  
         <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>  
@@ -84,6 +117,7 @@
   </ul> 
 </div>
 </div>
+<!--Tooltip-->
 <div id="section2" class="container-fluid">
   <h1>Section 2</h1>
   <center>
@@ -93,6 +127,7 @@
   <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!"><button>bottom</button></a>
   <center></center> 
 </div>
+<!--toolpills-->
 <div id="section3" class="container-fluid">
   <h1>Section 3</h1>
 
@@ -106,6 +141,11 @@
     </ul>
 
 
+
+
+
+<br>
+<br>
 
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
@@ -125,6 +165,44 @@
 
     <hr>
     <br>
+    <!--progress bars-->
+    <div id="section4" class="container-fluid">
+
+
+      <div class="container">  
+        <h2>Animated Progress Bar</h2>  
+        <p>The .active class animates the progress bar:</p>   
+        <div class="progress">  
+          <div class="progress-bar progress-bar-striped active"   
+          role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:70%">  
+            70%  
+          </div>  
+        </div>  
+      </div>
+
+      <div class="container">  
+        <h2>Stacked Progress Bars</h2>  
+        <p>Create a stacked progress bar by placing multiple bars into the same div with class .progress:</p>   
+        <div class="progress">  
+          <div class="progress-bar progress-bar-success"   
+          role="progressbar" style="width:40%">  
+            Free Space  
+          </div>  
+          <!--progresss bar with background color animated-->
+          <div class="progress-bar progress-bar-striped active"   
+          role="progressbar" style="width:10%;background-color: rgb(21, 134, 125);">  
+            Warning  
+          </div>  
+          <div class="progress-bar progress-bar-danger"   
+          role="progressbar" style="width:20%">  
+            Danger  
+          </div>  
+        </div>  
+      </div> 
+    </div>
+
+    <!--progress bars end-->
+
    
       
 </body>
