@@ -1,0 +1,304 @@
+<html>
+    <body>
+<h2>Arrays</h2>
+        <script>
+            var colors = ["Red", "Green", "Blue"]; 
+   var fruits = ["Apple", "Banana", "Mango", "Orange", "Papaya"];
+   var cities = ["London", "Paris", "New York"];
+   document.write(colors + "<br>");
+    document.write(fruits + "<br>");
+   document.write(cities + "<br>");
+   document.writeln("<br/>"); 
+   document.writeln("<br/>"); 
+//length of array
+   document.write("Length of an array for fruits"+"<br>");
+   document.write(fruits.length+"<br>");
+
+   document.writeln("<br/>"); 
+   document.writeln("<br/>");
+
+
+   fruits.push("Strawberry");
+ 
+ document.write(fruits+"<br>"); // "Apple", "Banana", "Mango", "Orange", "Papaya"
+ document.write(fruits.length+"<br>"); // Prints: 6
+
+ document.writeln("<br/>"); 
+   document.writeln("<br/>");
+
+   document.write("Looping through an array"+"<br>");
+// Iterates over array elements
+for(var i = 0; i < fruits.length; i++)
+{    
+    document.write(fruits[i] + "<br>"); // Print array element
+}
+       </script>
+
+<h4>for of loop</h4>
+<script>
+// Iterates over array elements
+//for-of loop
+for(var fruit of fruits) 
+{    
+document.write(fruit + "<br>"); // Print array element
+}
+</script>
+<h4> for in loop</h4>
+<script>
+//for-in loop
+for(var i in fruits) 
+{  
+document.write(fruits[i] + "<br>");
+}
+</script>
+
+
+
+
+
+<h2>Array Methods</h2>
+
+        <p>The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place</p>
+        <script>
+
+const days = ['sun', 'Mon', 'tue', 'wed'];
+            //splice(start, deleteCount, item1, item2, itemN)
+days.splice(1, 0, 'sat');
+// inserts at index 1
+document.write(days);
+// expected output: Array ["sun", "mon","tue","wed"]
+document.writeln("<br/>"); 
+
+days.splice(4, 1, 'added');
+// replaces 1 element at index 4
+document.write(days);
+
+// expected output: Array ["Jan", "Feb", "March", "April", "May"]
+document.writeln("<br/>"); 
+</script>
+
+<p>The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.</p>
+<!--concat opearation-->
+<script>
+    const array1 = ['one ', 'two', 'three'];
+const array2 = ['1', '2', '3'];
+const array3 = array1.concat(array2);
+
+document.write(array3);
+</script>
+<hr>
+<!-- concatinate of numbers and lettres-->
+<p>concatinate of numbers and lettres</p>
+<script>
+    const letters = ['a', 'b', 'c'];
+
+const alphaNumeric = letters.concat(13, 16, 33);
+
+document.write(alphaNumeric);
+// results in ['a', 'b', 'c', 1, 2, 3]
+</script><hr>
+<!-- entries function-->
+<p>The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.</p>
+<script>
+    var a = ['one', 'two', 'three','four','five'];
+var iterator = a.entries();
+for (let e of iterator)
+ {
+  document.write(e+"<br>");
+}
+//reverse method
+            </script>
+            <hr>
+            <p>The reverse() method reverses an array in place</p>
+            <script>
+                var a = [1, 2, 3,4,5,6,7,8,9,10];
+
+document.write(a); // [1, 2, 3]
+
+a.reverse();
+document.writeln("<br/>"); 
+
+document.write(a); // [3, 2, 1]
+</script><hr>
+<p>index values of string startig and reapeated string of last string index</p>
+<script>
+    //indexof and lastindexof methods
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango","Apple"];
+    var a=fruits.indexOf("Apple") ;  // Returns 2
+    document.write(a);
+    document.writeln("<br/>"); 
+    a=fruits.lastIndexOf("Apple"); 
+    document.write(a);
+        </script>
+        <hr>
+
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+<hr>
+<p>The join() method returns an array as a string.</p>
+<script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var a=fruits.join() ;  // Returns "Banana,Orange,Apple,Mango"
+document.write(a);
+console.log(a);
+console.log(fruits);
+
+</script>
+<hr>
+<p>The slice() method returns selected elements in an array, as a new array.</p>
+<script>
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    //extract the third and fourth elements, using negative numbers.
+var a = fruits.slice(-3, -1);
+document.write(a);
+document.writeln("<br/>"); 
+var b = fruits.slice(1, 4);
+document.write(b);
+</script>
+<hr>
+<!-- sort operation -->
+<p>The sort() method sorts an array alphabetically</p>
+<script>
+    var arr = [2, 5, 8, 1, 4]
+document.write(arr.sort());
+document.write(arr);
+document.writeln("<br/>");
+document.writeln("<br/>");
+  let arr1=[27,68,1,32,79,63]
+  document.write(arr1.sort());
+  document.writeln("<br/>");
+document.write(arr1);
+</script>
+<hr>
+
+<p>The filter() method creates a new array with all elements that pass the test implemented by the provided function.</p>
+<script>
+var words = ['Lekha', 'parthiv', 'sindu','getha','rajesh', 'Lakith', 'Raju', 'Elango','lokesh'];
+
+var result = words.filter(word => word.length == 6);
+
+var result1 = words.filter(word => word.length == 5);
+document.writeln("<br/>");
+document.write(result);
+document.writeln("<br/>");
+document.write(result1);
+
+</script>
+
+<hr><hr>
+
+<h2> Date Functions</h2>
+<!-- date function  current date an  meridian-->
+Current Date and Time: <span id="date"></span> 
+<br> 
+<script>  
+var today=new Date();  
+document.getElementById('date').innerHTML=today;
+  
+</script> 
+<p> Todays date</p>
+<script>  
+    var date=new Date();  
+    var day=date.getDate();  
+    var month=date.getMonth()+1;  
+    var year=date.getFullYear();  
+    document.write("<br>Date is: "+day+"/"+month+"/"+year);  
+    </script>  
+    <hr>
+
+<!-- current time-->
+    Current Time: <span id="txt1"></span> <br>
+    <br> 
+    <script>  
+    var today=new Date();  
+    var h=today.getHours();  
+    var m=today.getMinutes();  
+    var s=today.getSeconds();  
+    document.getElementById('txt1').innerHTML=h+":"+m+":"+s;  
+    </script>  
+    <hr>
+    <script>
+//gap between one date to present date
+        var d1 = new Date("10/05/1993"); 
+        var d2 = new Date(); 
+        var diff = d2.getTime() - d1.getTime(); 
+        
+        var daydiff = (diff / 31536000000).toFixed(0);   
+        document.write(" Total numbers of years since <b> 10nd may 1993 </b> is: <b> " + daydiff + " years </b>" ); 
+        </script> 
+<h2>math functions</h2>
+<h4>hosting for function</h4> <br>
+
+<script>  
+    //JavaScript Function Hoisting
+        document.write(sum(60,34)+"<br>");  
+        function sum(a,b)  
+        {  
+        return a+b;  
+        } 
+        </script>
+        <p> variable hosting</p><br>
+        <script> 
+//JavaScript Variable Hoisting
+        x=87;  
+document.write(x);  
+var x;  
+        </script> 
+        <hr>
+
+        <script>
+            //minimum number
+            document.write(Math.min(6, 150, 30, 20)+"minimum<br>");
+            //maximum number
+            document.write(Math.max(0, 150, 30, 20)+"maximum<br>");
+//round
+            document.write(Math.round(4.7)+"<br>");
+            </script>
+            <hr>
+<h2>String  methods and operations</h2>
+<p> concatination of two strings</p>
+<script>  
+    var s1="javascript ";  
+    var s2="concat example";  
+    var s3=s1.concat(s2);  
+    document.write(s3);  
+    </script>
+    <h5> index of hai in javascript indexof hai programme example</h5> 
+    <script>  
+        var s1="index of hai in javascript indexof hai programme example";  
+        var n=s1.indexOf("hai");  
+        document.write(n);  
+        </script>
+        <p>shows the element of "hai" in index number from the starting of the aray string</p> <br> 
+        <h5> index of hai in javascript indexof hai programme example</h5> 
+        <script>  
+            var s1="index of hai in javascript indexof hai programme example";  
+            var n=s1.lastIndexOf("hai");  
+            document.write(n);  
+            </script> 
+            <p>shows element of "hai" in the index from the last index of array string</p> 
+            <script>  
+                var s1="JavaScript to LowerCase  Example";  
+                var s2=s1.toLowerCase();
+                var s3="java script in uppercase Example";
+                var s4=s3.toUpperCase();   
+                document.write(s2);
+                document.writeln("<br>");
+                document.writeln("<br>");
+                document.write(s4);
+                var s6="javascript string slice"
+                var s5=s6.slice(2,15);  
+                        document.write(s5); 
+
+                </script>  
+                <hr>
+
+</body>
+</html>

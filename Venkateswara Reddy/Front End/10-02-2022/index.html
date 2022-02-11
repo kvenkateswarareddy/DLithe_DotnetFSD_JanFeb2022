@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>oops concept</title>
+    </head>
+    <body>
+        <h2>hello welcome to details page</h2> 
+        <script>   
+        //function
+            function employee()
+           {
+                this.fname = 'raja';
+                this.lname = 'ram';
+                this.desig = "software";
+                this.number= "934-356-4672";
+            }
+            //creating object
+            var  emp1 = new employee();
+            document.write(emp1.fname+" "+emp1.lname+" "+emp1.desig+"  "+emp1.number); //calling the class with object
+            document.write("<br>");
+            document.write("<br>");
+            var  emp2 = new employee();
+            emp2.location = "Bangalore";
+            document.write(emp2.location+"<br>");
+         //get the structure of prototype function
+            document.write("<br>");
+            document.write("<br>");
+            	var emp3 = new employee();
+	            var proto = Object.getPrototypeOf(emp3); 
+        
+	             document.write(proto.constructor);  
+            </script>
+            <h4 id="demo"></h4>
+            <script>
+                function Details(first, last, age) 
+                {
+                  this.firstName = first;
+                  this.lastName = last;
+                  this.age = age;
+                  this.number= 6736784567;
+                }
+                //using prototype crating function
+                
+                Details.prototype.name = function()
+                 {
+                  return this.firstName + " " + this.lastName+"   having"+this.age;
+                };
+                Details.prototype.name1 = function()
+                 {
+                  return this.firstName + " " + this.lastName+"  having  number of "+this.number;
+                };
+                
+                
+                const n = new Details("ratan", "tata", 40);
+                document.getElementById("demo").innerHTML ="My name is " + n.name();
+                document.write(n.name1());
+                </script>
+
+
+
+
+    </body>
+</html>
