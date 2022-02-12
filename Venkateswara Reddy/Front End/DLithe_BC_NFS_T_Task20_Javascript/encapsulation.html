@@ -1,0 +1,46 @@
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h3>Getting data using get() and set() methods</h3>
+<script>
+    
+
+//getting data by using getdata and set data in encapsulation
+class bikes  
+  {  
+    constructor()  
+    {  
+       var name;  
+       var cost;  
+    }  
+        getName()  
+        {  
+          return this.name;  
+        }  
+      setName(name)  
+      {  
+        this.name=name;  
+      }  
+        
+      getcost()  
+      {  
+        return this.cost;  
+      }  
+    setcost(cost)  
+    {  
+      this.cost=cost;  
+    }  
+  
+    }  
+    var bik=new bikes();  
+     bik.setName("Royal Enfield");  
+     bik.setcost(250000);  
+     document.writeln(bik.getName()+"  Cost is  "+bik.getcost());  
+</script>  
+
+
+    </body>
+</html>

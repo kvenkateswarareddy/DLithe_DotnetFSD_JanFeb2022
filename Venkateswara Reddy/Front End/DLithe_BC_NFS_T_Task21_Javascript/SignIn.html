@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup validation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/SignIn.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        function match()
+        {
+        var firstpassword=document.f1.pswd.value;
+        var secondpassword=document.f1.pswd1.value;
+        
+        if(firstpassword==secondpassword)
+        {
+        return true;
+        }
+        else
+        {
+        alert("password must be same!");
+        return false;
+        }
+        }
+        function CheckPassword(inputtxt) 
+        { 
+        var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+        if(inputtxt.value.match(decimal)) 
+        { 
+        alert('Entered correct Password')
+        return true;
+        }
+       else
+       { 
+       alert('Enter Password 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character')
+       return false;
+        }
+        }
+        </script>
+</head>
+
+<body style="background-color: rgb(177, 177, 194)">
+
+    <center><div class="container">
+
+        <form name="form1" action="" onsubmit="return match()">
+            <h1>SignIn</h1>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="border-radius:20px;width:30%;">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" style="border-radius:20px;width:30%;">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Confirm Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd1" style="border-radius:20px;width:30%;">
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <button type="submit" onclick="CheckPassword(document.form1.pswd)" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </center>
+
+</body>
+
+</html>
