@@ -1,23 +1,65 @@
-function displaySum() {
-    // if no argument        
-    if (arguments.length == 0) {
-      console.log('No argument is passed.');
-    }
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>function overloading</h2>
+
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<button type="button" onclick="getcube(4)">cube</button>
+<button type="button" onclick="func(2,4,3)">Three parameters</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+function myFunction() 
+{
+  document.getElementById("demo1").innerHTML = "Without parameters";
+  document.getElementById("demo2").innerHTML = "Hello Trainees!";
+  document.getElementById("demo3").innerHTML = "How are you?";
+
+}
+function getcube(number)
+{  
+alert('function with one parameter  '+ 'cube of ' + number  +  '  number is  '+number*number*number);  
+}  
+
+document.writeln("JavaScript Function Object ");
+document.writeln("<br/>");
+
+var add=new Function("num1","num2","return num1+num2");
+var sub=new Function("num1","num2","return num2-num1");
+var mul=new Function("num1","num2","return num2*num1");
+
+document.writeln("<br/>"); 
+document.writeln('addition '+ add(5,5));
+document.writeln("<br/>"); 
+
+document.writeln('subtraction '+ sub(3,5));
+document.writeln("<br/>"); 
+document.writeln('multiplication of '+ mul(7,5));
+
+
+</script>
+<hr>
+<script>
+
   
-    // if only one argument 
-    else if (arguments.length == 1) {
-      console.log('You have to pass at least two arugments to perform addition.');
-    }
-  
-    // multiple arguments
-    else {
-      let sum = 0;
-      let length = arguments.length;
-      for (var i = 0; i < length; i++) {
-        sum = sum + arguments[i];
-      }
-      console.log("Sum is " + sum);
-    }
-  }
-  
-  displaySum(); //
+  function func(number,number1,number2)
+{  
+alert(number*number1*number2);  
+}
+
+
+
+function showFullname(firstName, lastName,stream)
+ {
+    alert(firstName + " " + lastName+ " in the stream of "+stream);
+}
+showFullname("venkateswara reddy","kondreddy","computer science and engineering");
+
+
+</script>
+</body>
+</html>
