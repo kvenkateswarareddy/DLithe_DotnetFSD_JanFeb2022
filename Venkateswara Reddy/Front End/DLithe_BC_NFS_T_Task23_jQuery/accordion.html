@@ -62,3 +62,35 @@
     </div>
     </center>
   </div>
+  <br>
+  <br>
+<!--autocomplete-->
+      <script>
+         $(function() {
+            var autocomp  =  [
+               "ASP",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Javascript",
+               "Java",
+               "Jquery",
+               "Sql"
+            ];
+            $( "#automplete-1" ).autocomplete({
+               source: autocomp,
+               autoFocus:true,
+              minLength:2,   
+               delay:500,   
+            });
+         });
+      </script>
+      <!-- HTML --> 
+      <h2>Auto complete</h2>
+      <div class = "ui-widget">
+         <p><em>Enter word or letter </em></p>
+         <label for = "automplete-1">Tags: </label>
+         <input id = "automplete-1">
+      </div>
+  </body>
+  </html>
