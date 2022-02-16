@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  body{
+              background: #FBD3E9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7cce3, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f58dc6, #afcdce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+      font-size: 18px;
+  }
+.container{
+    background-color: rgb(194, 221, 245);
+    border-radius: 15px;
+}
+pre{
+    background-color: rgb(245, 182, 182);
+    color: green;
+    border-radius: 15px;
+}
+#id1{
+    color:black;
+
+
+}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #5afafa;">
+        <a class="navbar-brand" href="#">JQUERY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="demo.html">Selectors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jqeffects.html"> Effects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <!-- hide and show-->
+        <script>$(document).ready(function(){
+            $("#hide").click(function(){
+              $("p").hide();
+            });
+            $("#show").click(function(){
+              $("p").show();
+            });
+          });
+          </script>
+          <h3>jQuery Effects - Hide and Show</h3>
+
+          <p>If you click on the "Hide" button, I will disappear.</p>
+          
+          <button id="hide">Hide</button>
+          <button id="show">Show</button>
+          <hr>
+
+          <!-- toggle button-->
+          <h1>jQuery toggle()</h1>
+          <script>
+            $(document).ready(function(){
+              $("#toggle").click(function(){
+                $("a").toggle();
+              });
+            });
+            </script>
+<script>
+$(document).ready(function(){
+    $("#fi").click(function(){
+      $("#div1").fadeIn();
+      $("#div2").fadeIn("slow");
+      $("#div3").fadeIn(3000);
+    });
+  });
+  </script>
+
+<script>
+  $(document).ready(function(){
+    $("#fo").click(function(){
+      $("#div1").fadeOut();
+      $("#div2").fadeOut("slow");
+      $("#div3").fadeOut(3000);
+    });
+  });
+  </script>
+
+<button id="fi">Click to fade in boxes</button><br><br>
+
+<button id="fo">Click to fade out boxes</button><br><br>
+<center>
+    <div style="background-color:white;">
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+</center>
+
+        
+        <button id="toggle">Toggle between hiding and showing the links</button>
+        <br>
+        <a href="https://www.google.co.in/">Google</a>
+        <br>
+        <a href="https://www.linkedin.com/login">Linkedin</a><hr>
+        <script>
+            $(document).ready(function(){
+              $("#ft").click(function(){
+                $("#div4").fadeToggle();
+                $("#div5").fadeToggle("slow");
+                $("#div6").fadeToggle(3000);
+              });
+            });
+            </script>
+    
+            <button id="ft">Click to fade in/out boxes</button><br><br>
+            
+            <div id="div4" style="width:80px;height:80px;display:none;background-color:rgb(12, 216, 131);"></div><br>
+            <div id="div5" style="width:80px;height:80px;display:none;background-color:rgb(241, 241, 67);"></div><br>
+            <div id="div6" style="width:80px;height:80px;display:none;background-color:rgb(175, 45, 175);"></div>
+            
+          </body>
+          </html>

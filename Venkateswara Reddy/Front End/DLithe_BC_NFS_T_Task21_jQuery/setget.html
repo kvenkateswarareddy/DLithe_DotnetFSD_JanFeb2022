@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+         body{
+              background: #FBD3E9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7cce3, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f58dc6, #afcdce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+      font-size: 18px;
+  }
+         .container{
+      background-color: rgb(183, 240, 235);
+      border-radius: 15px;
+  }
+  #id1{
+    color:black;
+
+
+}
+    </style>
+</head>
+<body>
+    <!--navbar-->>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #5afafa;">
+        <a class="navbar-brand" href="#">JQUERY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="demo.html">Selectors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"> JQeffects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="animate.html"> animation </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="setget.html"> Set and Get </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container" style="margin-top: 100px;">
+    <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            alert("Text: " + $("#test").text());
+          });
+          $("#btn2").click(function(){
+            alert("HTML: " + $("#test").html());
+          });
+        });
+        </script>
+         <h3> Get content</h3>
+         <code id="id1">
+            
+            Get Content - text(), html(), and val()<br>
+            Three simple, but useful, jQuery methods for DOM manipulation are:<br>
+            
+            text() - Sets or returns the text content of selected elements<br>
+            html() - Sets or returns the content of selected elements (including HTML markup)<br>
+            val() - Sets or returns the value of form fields<br>
+    </code>
+    <br>
+    <br>
+  <h4>Output for using Text() and Html()</h4>
+    <p id="test">This is some "<i>italic</i>" text in a paragraph.</p>
+    
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+    <br>
+    <br>
+    <script>
+        //using val()
+        $(document).ready(function(){
+          $("#lg").click(function(){
+            alert("COMPANY: " + $("#test1").val());
+          });
+        });
+        </script>
+    <h4>Output for using val()</h4><br>
+    <p>COMPANY: <input type="text" id="test1" value="VRK Technologies"></p>
+    
+    <button id="lg">Show Value</button>
+    <hr>
+    <hr>
+    <h3>Set Content</h3>
+    <code id="id1">
+       
+    Set Content - text(), html(), and val()<br>
+    We will use the same three methods from the previous page to set content:<br>
+    
+    text() - Sets or returns the text content of selected elements<br>
+    html() - Sets or returns the content of selected elements (including HTML markup)<br>
+    val() - Sets or returns the value of form fields<br>
+    </code>
+
+
+    <br>
+    <script>
+        //set content
+        $(document).ready(function(){
+          $("#btn5").click(function(){
+            $("#tes").text("Hello venkatesh");
+          });
+          $("#btn6").click(function(){
+            $("#te").html("<b>Welcome to VRK tech</b>");
+          });
+          $("#btn7").click(function(){
+            $("#test3").val("VRK Tech");
+          });
+        });
+        </script>
+
+<p id="tes">This is a paragraph.</p>
+<p id="te">This is another paragraph.</p>
+
+<p>Company: <input type="text" id="test3" value="G2 TECHSOFT"></p>
+
+<button id="btn5">Set Text</button>
+<button id="btn6">Set HTML</button>
+<button id="btn7">Set Value</button>
+<br>
+<br>
+<h3>Set attribute</h3>
+<code id="id1">
+
+    The jQuery attr() method is also used to set/change attribute values.
+</code>
+
+<script>
+    $(document).ready(function(){
+      $("#a").click(function(){
+        $("#m").attr("href", "https://www.microsoft.com/").attr("title" , "Welcome to Microsoft")
+        $("#m").text("www.microsoft.com");
+      });
+    });
+    </script>
+
+<p><a href="https://www.Google.com" id="m" title="Welcome to Google">www.google.com</a></p>
+
+<button id="a">Change href Value</button>
+<hr>
+</div>
+</body>
+</html>
