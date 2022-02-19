@@ -1,0 +1,15 @@
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.csproj.AssemblyReference.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.GeneratedMSBuildEditorConfig.editorconfig
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.AssemblyInfoInputs.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.AssemblyInfo.cs
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.csproj.CoreCompileInputs.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\bin\Debug\net6.0\Debugging_task 28.exe
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\bin\Debug\net6.0\Debugging_task 28.deps.json
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\bin\Debug\net6.0\Debugging_task 28.runtimeconfig.json
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\bin\Debug\net6.0\Debugging_task 28.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\bin\Debug\net6.0\ref\Debugging_task 28.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\bin\Debug\net6.0\Debugging_task 28.pdb
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\ref\Debugging_task 28.dll
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.pdb
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\Debugging_task 28\Debugging_task 28\obj\Debug\net6.0\Debugging_task 28.genruntimeconfig.cache

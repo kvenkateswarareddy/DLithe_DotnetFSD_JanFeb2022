@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "443f1933-6156-4722-9bba-f8939c91074c": {
+      "ProjectGuid": "443f1933-6156-4722-9bba-f8939c91074c",
+      "DisplayName": "DLithe_BC_NFS_T_Task25",
+      "ColorIndex": 0
+    },
+    "9361c4f1-b938-4382-9e96-2487c8f0ecf3": {
+      "ProjectGuid": "9361c4f1-b938-4382-9e96-2487c8f0ecf3",
+      "DisplayName": "assemblyinternal",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

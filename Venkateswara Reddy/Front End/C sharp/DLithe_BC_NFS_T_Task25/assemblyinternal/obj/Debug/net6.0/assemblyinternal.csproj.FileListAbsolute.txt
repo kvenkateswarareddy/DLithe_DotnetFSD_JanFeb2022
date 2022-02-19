@@ -1,0 +1,5 @@
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\DLithe_BC_NFS_T_Task25\assemblyinternal\obj\Debug\net6.0\assemblyinternal.csproj.AssemblyReference.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\DLithe_BC_NFS_T_Task25\assemblyinternal\obj\Debug\net6.0\assemblyinternal.GeneratedMSBuildEditorConfig.editorconfig
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\DLithe_BC_NFS_T_Task25\assemblyinternal\obj\Debug\net6.0\assemblyinternal.AssemblyInfoInputs.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\DLithe_BC_NFS_T_Task25\assemblyinternal\obj\Debug\net6.0\assemblyinternal.AssemblyInfo.cs
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\C sharp\DLithe_BC_NFS_T_Task25\assemblyinternal\obj\Debug\net6.0\assemblyinternal.csproj.CoreCompileInputs.cache
