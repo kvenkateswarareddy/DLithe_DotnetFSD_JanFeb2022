@@ -10,6 +10,11 @@
       "ProjectGuid": "9361c4f1-b938-4382-9e96-2487c8f0ecf3",
       "DisplayName": "assemblyinternal",
       "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 2
