@@ -20,7 +20,7 @@ namespace Program4
 
         public static void Main()
         {
-            int y = Addition(10, 20, 30, 40);
+            int y = Addition(20,10,5,67);
             Console.WriteLine("Total Sum is: " + y);
         }
     }
