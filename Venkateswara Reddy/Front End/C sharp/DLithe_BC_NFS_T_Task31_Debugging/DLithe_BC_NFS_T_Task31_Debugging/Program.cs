@@ -5,7 +5,7 @@
         public void Test();//added void
         void Show();
     }
-    interface Iinterface2
+    interface Iinterface2//added I
     {
         void Test();
         void Show();
