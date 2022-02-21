@@ -8,7 +8,7 @@
         {
             set
             {
-                _empid = value;
+                _empid = value; //added _
             }
             get
             {
