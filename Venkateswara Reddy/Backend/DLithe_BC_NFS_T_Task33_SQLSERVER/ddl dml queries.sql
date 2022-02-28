@@ -28,7 +28,8 @@ create database Dlithe
   select * from trainees where Name like 'r%'
   select * from trainees where Name like 'v%' --like operator
 
-
+  --update command
+update trainees set deptname='ece' where id=2
   --create schema
   create schema TE
 
@@ -52,8 +53,6 @@ delete from trainees where deptname='it' --to delete 'it' dept records only
 -- Truncate
 truncate table
 
---update command
-update trainees set deptname='ece' where id=2
 
 
----Constraints
+

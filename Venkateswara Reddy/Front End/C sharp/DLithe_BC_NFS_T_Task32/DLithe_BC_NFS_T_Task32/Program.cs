@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PolymorphismApplication
+namespace PolymorphismApp
 {
     class Shape
     {
@@ -61,8 +61,8 @@ namespace PolymorphismApplication
         static void Main(string[] args)
         {
             Caller c = new Caller();
-            Rectangle r = new Rectangle(10, 7);
-            Triangle t = new Triangle(10, 5);
+            Rectangle r = new Rectangle(14, 7);
+            Triangle t = new Triangle(13, 5);
 
             c.CallArea(r);
             c.CallArea(t);

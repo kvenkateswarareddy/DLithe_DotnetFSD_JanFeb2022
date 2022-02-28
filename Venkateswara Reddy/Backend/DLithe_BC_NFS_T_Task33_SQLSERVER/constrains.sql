@@ -75,3 +75,15 @@ VALUES
 	(9,'joel',25000,'chennai','ditjava'); 
 
 	select * from Dlithe_uni
+
+
+	--constraint key name as per our name
+
+	create table constraints_namechange
+	(
+	id int,
+	Name varchar(25) not null,
+	age int,
+	address varchar(25) default 'chennai',
+	constraint pk1_id primary(id)
+	)
