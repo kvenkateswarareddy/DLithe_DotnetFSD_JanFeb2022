@@ -51,7 +51,7 @@ drop table TE.Martr
 delete from trainees where deptname='it' --to delete 'it' dept records only 
 
 -- Truncate
-truncate table
+truncate table TRAINEES
 
 
 
