@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--accordian-->
+<link href = "https://code.jquery.com/ui/1.10.4/themes/le-frog/jquery-ui.css"
+         rel = "stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".div1") 
+    .animate({left: '400px'}, "slow")
+    .animate({fontSize: '40px'}, 1000)
+    
+  });
+});
+</script> 
+<style>
+    body{
+         background: #FBD3E9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7cce3, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f58dc6, #afcdce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ font-size: 18px;
+}
+       #accordion{
+         font-size: 14px;
+         background-color: rgb(199, 245, 245);
+         color:rgb(88, 24, 207);
+         text-align: center;
+         font-family: fantasy;
+         border-radius: 20px;
+       }
+</style>
+</head>
+<body>
+     <!--navbar-->>
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #bcf8aa;">
+      <a class="navbar-brand" href="#">JQUERY</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="demo.html">Animate()</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="met.html"> Methods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="accordion.html"> Accordion</a>
+            </li>
+              </ul>
+          </div>
+          </nav>
+
+    <div class="container" style="margin-top: 100px;">
+<button >Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div  class="div1" style="background:#e1f3a1;height:50px;width:500px;position:absolute;border-radius: 5px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: rgb(247, 148, 55);">*WELCOME TO VRK TECH Soft*</div>
+
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".div1") 
+    .animate({left: '400px'}, "slow")
+    .animate({fontSize: '40px'}, 1000)
+    
+  });
+});
+</script> 
+<br>
+<br>
+<br>
+
+
+<div class="div1" style="background:#0a0a0a;height:50px;width:400px;position:absolute;border-radius: 5px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color: rgb(252, 17, 17);">*WELCOME Venkatesh*</div>
+
+<br><br><br>
+<hr>
+  </div>
+  </div>
+</body>
+</html>
