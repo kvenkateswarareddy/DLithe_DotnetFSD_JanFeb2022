@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/le-frog/jquery-ui.css"
+         rel = "stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        #accordion{
+            width:50%;
+            text-align:center;
+        }
+
+        body{
+              background: #FBD3E9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7cce3, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f58dc6, #afcdce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+      font-size: 18px;
+  }
+              .container{
+      background-color: rgb(183, 240, 235);
+      border-radius: 15px;
+  }
+    </style>
+</head>
+<body>
+<!--accordian-->
+<script>
+    // $( function() {
+     //  $( "#accordion" ).accordion();
+    // } );
+     $(function() {
+               $( "#accordion" ).accordion({
+                  collapsible: true
+             });
+            });
+     </script>
+     <br>
+     <br>
+     <br>
+     <br>
+     <center>
+<div id="accordion"> 
+    <h3>Accordion</h3>
+    <div>
+      <p>
+     Accordian
+      </p>
+      <p>
+      Jquery
+      </p>
+      <p>
+          widgets
+      </p>
+      </div>
+    </div>
+    </center>
+  </div>
+  <br>
+  <br>
+<!--autocomplete-->
+      <script>
+         $(function() {
+            var autocomp  =  [
+               "ASP",
+               "Bootstrap",
+               "C",
+               "C++",
+               "Javascript",
+               "Java",
+               "Jquery",
+               "Sql"
+            ];
+            $( "#automplete-1" ).autocomplete({
+               source: autocomp,
+               autoFocus:true,
+              minLength:2,   
+               delay:500,   
+            });
+         });
+      </script>
+      <!-- HTML --> 
+      <h2>Auto complete</h2>
+      <div class = "ui-widget">
+         <p><em>Enter word or letter </em></p>
+         <label for = "automplete-1">Tags: </label>
+         <input id = "automplete-1">
+      </div>
+  </body>
+  </html>

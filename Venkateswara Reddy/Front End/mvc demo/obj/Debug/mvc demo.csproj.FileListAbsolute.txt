@@ -1,0 +1,2 @@
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\mvc demo\obj\Debug\mvc demo.csproj.AssemblyReference.cache
+D:\DLithe_DotnetFSD_JanFeb2022\Venkateswara Reddy\Front End\mvc demo\obj\Debug\mvc demo.csproj.CoreCompileInputs.cache
