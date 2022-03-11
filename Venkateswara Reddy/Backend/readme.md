@@ -1,4 +1,4 @@
-mysql server
+MYSQL Server
 
 Data Definition Language (DDL)
 
